@@ -1,0 +1,48 @@
+UNIQUE,UNIQUE_2,COD_3,DESCRIPCION_3
+1,1,2,110kV<=U<220kV
+2,1,3,36kV<=U<110kV
+3,1,4,1kV<=U<36kV
+4,1,5,U<1 kV
+5,2,0,U>=400 kV
+6,2,1,220kV<=U<400 kV
+7,2,2,110kV<=U<220kV
+8,2,3,36kV<=U<110kV
+9,2,4,1kV<=U<36kV
+10,3,4,1kV<=U<36kV
+11,4,0,No identificables
+12,4,1,Centralizado
+13,4,2,Actuadores
+14,4,3,Elementos físicos de transmisión de contro
+15,4,4,Elementos no físicos de transmisión de control
+16,4,5,Elementos necesarios para el control de la calidad de onda
+17,5,2,110kV<=U<220kV
+18,5,3,36kV<=U<110kV
+19,5,4,1kV<=U<36kV
+20,5,5,U < 1 kV
+21,6,2,110kV<=U<220kV
+22,6,3,36kV<=U<110kV
+23,6,4,1kV<=U<36kV
+24,7,2,110kV<=U<220kV
+25,7,3,36kV<=U<110kV
+26,7,4,1kV<=U<36kV
+27,8,0,U>=400 kV
+28,8,1,220kV<=U<400 kV
+29,8,2,110kV<=U<220kV
+30,8,3,36kV<=U<110kV
+31,8,4,1kV<=U<36kV
+32,9,2,110kV<=U<220kV
+33,9,3,36kV<=U<110kV
+34,9,4,1kV<=U<36kV
+35,9,A,U >= 110 kV
+36,9,B,110 kV > U ≥ 36 kV
+37,9,C,36 kV > U ≥ 1 kV
+38,10,0,Posición no utilizada
+39,11,0,Posición no utilizada
+40,12,2,110kV<=U<220kV
+41,12,3,36kV<=U<110kV
+42,12,4,36kV<=U<110kV
+43,12,5,U < 1 kV
+44,13,2,110kV<=U<220kV
+45,13,3,36kV<=U<110kV
+46,13,4,36kV<=U<110kV
+47,13,5,U < 1 kV

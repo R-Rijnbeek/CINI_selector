@@ -1,0 +1,150 @@
+UNIQUE,UNIQUE_3,COD_4,DESCRIPCION_4
+1,1,1,"tensada sobre postes, un circuito"
+2,1,2,"tensada sobre postes, doble circuito"
+3,1,3,"tensada sobre postes, más de dos circuitos"
+4,1,4,"apoyada sobre fachada, un circuito"
+5,1,5,"apoyada sobre fachada, doble circuito"
+6,1,6,"apoyada sobre fachada, más de dos circuitos"
+7,1,7,"subterránea, un circuito"
+8,1,8,"subterránea, doble circuito"
+9,1,9,"subterránea, más de dos circuitos"
+10,2,1,"tensada sobre postes, un circuito"
+11,2,2,"tensada sobre postes, doble circuito"
+12,2,3,"tensada sobre postes, más de dos circuitos"
+13,2,4,"apoyada sobre fachada, un circuito"
+14,2,5,"apoyada sobre fachada, doble circuito"
+15,2,6,"apoyada sobre fachada, más de dos circuitos"
+16,2,7,"subterránea, un circuito"
+17,2,8,"subterránea, doble circuito"
+18,2,9,"subterránea, más de dos circuitos"
+19,3,1,"tensada sobre postes, un circuito"
+20,3,2,"tensada sobre postes, doble circuito"
+21,3,3,"tensada sobre postes, más de dos circuitos"
+22,3,4,"apoyada sobre fachada, un circuito"
+23,3,5,"apoyada sobre fachada, doble circuito"
+24,3,6,"apoyada sobre fachada, más de dos circuitos"
+25,3,7,"subterránea, un circuito"
+26,3,8,"subterránea, doble circuito"
+27,3,9,"subterránea, más de dos circuitos"
+28,4,1,"tensada sobre postes, un circuito"
+29,4,2,"tensada sobre postes, doble circuito"
+30,4,3,"tensada sobre postes, más de dos circuitos"
+31,4,4,"apoyada sobre fachada, un circuito"
+32,4,5,"apoyada sobre fachada, doble circuito"
+33,4,6,"apoyada sobre fachada, más de dos circuitos"
+34,4,7,"subterránea, un circuito"
+35,4,8,"subterránea, doble circuito"
+36,4,9,"subterránea, más de dos circuitos"
+37,5,2,110kV<=U<220kV
+38,5,3,36kV<=U<110kV
+39,5,4,1kV<=U<36kV
+40,6,2,110kV<=U<220kV
+41,6,3,36kV<=U<110kV
+42,6,4,1kV<=U<36kV
+43,7,2,110kV<=U<220kV
+44,7,3,36kV<=U<110kV
+45,7,4,1kV<=U<36kV
+46,8,2,110kV<=U<220kV
+47,8,3,36kV<=U<110kV
+48,8,4,1kV<=U<36kV
+49,9,2,110kV<=U<220kV
+50,9,3,36kV<=U<110kV
+51,9,4,1kV<=U<36kV
+52,10,5,5 U < 1 Kv
+53,11,0,Posición no utilizada
+54,12,0,Posición no utilizada
+55,13,0,Posición no utilizada
+56,14,0,Posición no utilizada
+57,15,0,Posición no utilizada
+58,16,1,Equipo en campo concentrador de datos y/o modem.
+59,16,2,Equipo analizador fijo con modem incorporado.
+60,16,3,Equipo analizador fijo sin modem incorporado.
+61,16,4,Equipo analizador móvil con modem incorporado.
+62,16,5,Equipo analizador móvil sin modem incorporado.
+63,16,6,Otros
+64,17,0,Posición no utilizada
+65,18,0,Posición no utilizada
+66,19,0,Posición no utilizada
+67,20,0,Posición no utilizada
+68,21,0,Posición no utilizada
+69,22,0,Posición no utilizada
+70,23,0,Posición no utilizada
+71,24,0,Posición no utilizada
+72,25,0,Posición no utilizada
+73,26,0,Posición no utilizada
+74,27,2,110kV<=U<220kV
+75,27,3,36kV<=U<110kV
+76,27,4,1kV<=U<36kV
+77,27,5,U < 1 Kv
+78,28,2,110kV<=U<220kV
+79,28,3,36kV<=U<110kV
+80,28,4,1kV<=U<36kV
+81,28,5,U < 1 Kv
+82,29,2,110kV<=U<220kV
+83,29,3,36kV<=U<110kV
+84,29,4,1kV<=U<36kV
+85,29,5,U < 1 Kv
+86,30,2,110kV<=U<220kV
+87,30,3,36kV<=U<110kV
+88,30,4,1kV<=U<36kV
+89,30,5,U < 1 Kv
+90,31,2,110kV<=U<220kV
+91,31,3,36kV<=U<110kV
+92,31,4,1kV<=U<36kV
+93,31,5,U < 1 Kv
+94,32,1,Parque
+95,33,1,Parque
+96,34,1,Parque
+97,35,2,Posición con interruptor
+98,35,3,Posición sin interruptor
+99,36,2,Posición con interruptor
+100,36,3,Posición sin interruptor
+101,37,2,Posición con interruptor
+102,37,3,Posición sin interruptor
+103,38,0,Posición no utilizada
+104,39,1,Propiedad empresa distribuidora
+105,39,2,Propiedad Cliente
+106,40,1,Hidráulica
+107,40,2,Térmica
+108,41,1,Hidráulica
+109,41,2,Térmica
+110,42,1,Hidráulica
+111,42,2,Térmica
+112,43,1,Hidráulica
+113,43,2,Térmica
+114,44,1,Hidráulica
+115,44,2,Cogeneración
+116,44,3,Biomasa
+117,44,4,Residuos
+118,44,5,Solar fotovoltaica
+119,44,6,Termoeléctrica
+120,44,7,Eólica terrestre
+121,44,8,Eólica marina
+122,44,9,Otros
+123,45,1,Hidráulica
+124,45,2,Cogeneración
+125,45,3,Biomasa
+126,45,4,Residuos
+127,45,5,Solar fotovoltaica
+128,45,6,Termoeléctrica
+129,45,7,Eólica terrestre
+130,45,8,Eólica marina
+131,45,9,Otros
+132,46,1,Hidráulica
+133,46,2,Cogeneración
+134,46,3,Biomasa
+135,46,4,Residuos
+136,46,5,Solar fotovoltaica
+137,46,6,Termoeléctrica
+138,46,7,Eólica terrestre
+139,46,8,Eólica marina
+140,46,9,Otros
+141,47,1,Hidráulica
+142,47,2,Cogeneración
+143,47,3,Biomasa
+144,47,4,Residuos
+145,47,5,Solar fotovoltaica
+146,47,6,Termoeléctrica
+147,47,7,Eólica terrestre
+148,47,8,Eólica marina
+149,47,9,Otros

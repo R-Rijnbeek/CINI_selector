@@ -1,0 +1,14 @@
+UNIQUE,UNIQUE_1,COD_2,DESCRIPCION_2
+1,1,0,Linea
+2,1,1,Subestaciones de transformación en servicio de distribución
+3,1,2,Centros de transformación de distribución
+4,1,3,Despachos de maniobra y centros de control de energía de distribución
+5,1,4,Equipos de compensación de reactiva
+6,1,5,Reguladores de tensión
+7,1,6,Equipos de fiabilidad
+8,1,7,Transformadores y máquinas de potencia en subestaciones y centros de transformación
+9,1,8,Parques de distribución y posiciones equipadas
+10,1,9,Otras instalaciones técnicas de distribución
+11,2,1,Aparatos de medida para servicio de clientes
+12,3,2,Régimen ordinario
+13,3,3,Régimen especial

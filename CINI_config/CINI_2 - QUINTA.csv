@@ -1,0 +1,455 @@
+UNIQUE,UNIQUE_4,COD_5,DESCRIPCION_5
+1,1,1,Simplex
+2,1,2,Dúplex
+3,1,3,Tríplex
+4,2,1,Simplex
+5,2,2,Dúplex
+6,2,3,Tríplex
+7,3,1,Simplex
+8,3,2,Dúplex
+9,3,3,Tríplex
+10,4,1,Simplex
+11,4,2,Dúplex
+12,4,3,Tríplex
+13,5,1,Simplex
+14,5,2,Dúplex
+15,5,3,Tríplex
+16,6,1,Simplex
+17,6,2,Dúplex
+18,6,3,Tríplex
+19,7,1,Simplex
+20,7,2,Dúplex
+21,7,3,Tríplex
+22,8,1,Simplex
+23,8,2,Dúplex
+24,8,3,Tríplex
+25,9,1,Simplex
+26,9,2,Dúplex
+27,9,3,Tríplex
+28,10,1,Simplex
+29,10,2,Dúplex
+30,10,3,Tríplex
+31,11,1,Simplex
+32,11,2,Dúplex
+33,11,3,Tríplex
+34,12,1,Simplex
+35,12,2,Dúplex
+36,12,3,Tríplex
+37,13,1,Simplex
+38,13,2,Dúplex
+39,13,3,Tríplex
+40,14,1,Simplex
+41,14,2,Dúplex
+42,14,3,Tríplex
+43,15,1,Simplex
+44,15,2,Dúplex
+45,15,3,Tríplex
+46,16,1,Simplex
+47,16,2,Dúplex
+48,16,3,Tríplex
+49,17,1,Simplex
+50,17,2,Dúplex
+51,17,3,Tríplex
+52,18,1,Simplex
+53,18,2,Dúplex
+54,18,3,Tríplex
+55,19,1,Simplex
+56,19,2,Dúplex
+57,19,3,Tríplex
+58,20,1,Simplex
+59,20,2,Dúplex
+60,20,3,Tríplex
+61,21,1,Simplex
+62,21,2,Dúplex
+63,21,3,Tríplex
+64,22,1,Simplex
+65,22,2,Dúplex
+66,22,3,Tríplex
+67,23,1,Simplex
+68,23,2,Dúplex
+69,23,3,Tríplex
+70,24,1,Simplex
+71,24,2,Dúplex
+72,24,3,Tríplex
+73,25,1,Simplex
+74,25,2,Dúplex
+75,25,3,Tríplex
+76,26,1,Simplex
+77,26,2,Dúplex
+78,26,3,Tríplex
+79,27,1,Simplex
+80,27,2,Dúplex
+81,27,3,Tríplex
+82,28,1,Simplex
+83,28,2,Dúplex
+84,28,3,Tríplex
+85,29,1,Simplex
+86,29,2,Dúplex
+87,29,3,Tríplex
+88,30,1,Simplex
+89,30,2,Dúplex
+90,30,3,Tríplex
+91,31,1,Simplex
+92,31,2,Dúplex
+93,31,3,Tríplex
+94,32,1,Simplex
+95,32,2,Dúplex
+96,32,3,Tríplex
+97,33,1,Simplex
+98,33,2,Dúplex
+99,33,3,Tríplex
+100,34,1,Simplex
+101,34,2,Dúplex
+102,34,3,Tríplex
+103,35,1,Simplex
+104,35,2,Dúplex
+105,35,3,Tríplex
+106,36,1,Simplex
+107,36,2,Dúplex
+108,36,3,Tríplex
+109,37,1,Convencional
+110,37,2,Blindada
+111,37,3,Móvil
+112,38,1,Convencional
+113,38,2,Blindada
+114,38,3,Móvil
+115,39,1,Convencional
+116,39,2,Blindada
+117,39,3,Móvil
+118,40,1,Convencional
+119,40,2,Blindada
+120,40,3,Móvil
+121,41,1,Convencional
+122,41,2,Blindada
+123,41,3,Móvil
+124,42,1,Convencional
+125,42,2,Blindada
+126,42,3,Móvil
+127,43,1,Convencional
+128,43,2,Blindada
+129,43,3,Móvil
+130,44,1,Convencional
+131,44,2,Blindada
+132,44,3,Móvil
+133,45,1,Convencional
+134,45,2,Blindada
+135,45,3,Móvil
+136,46,1,Convencional
+137,46,2,Blindada
+138,46,3,Móvil
+139,47,1,Convencional
+140,47,2,Blindada
+141,47,3,Móvil
+142,48,1,Convencional
+143,48,2,Blindada
+144,48,3,Móvil
+145,49,1,Convencional
+146,49,2,Blindada
+147,49,3,Móvil
+148,50,1,Convencional
+149,50,2,Blindada
+150,50,3,Móvil
+151,51,1,Convencional
+152,51,2,Blindada
+153,51,3,Móvil
+154,52,1,Intemperie
+155,52,2,Caseta
+156,52,3,Local
+157,52,4,Subterráneo
+158,52,9,Móvil
+159,53,0,Posición no utilizada
+160,54,0,Posición no utilizada
+161,55,0,Posición no utilizada
+162,56,0,Posición no utilizada
+163,57,0,Posición no utilizada
+164,58,1,Equipo medidor de un sistema trifásico de tensión
+165,58,2,Equipo medidor de un sistema trifásico de tensión e intensidad.
+166,58,3,Equipo medidor de dos sistemas trifásicos de tensión
+167,58,4,Equipo medidor de dos sistemas trifásicos de tensión e intensidad.
+168,58,5,Equipo medidor de tres o más sistemas trifásicos de tensión o intensidad.
+169,58,6,Otros
+170,59,1,Equipo medidor de un sistema trifásico de tensión
+171,59,2,Equipo medidor de un sistema trifásico de tensión e intensidad.
+172,59,3,Equipo medidor de dos sistemas trifásicos de tensión
+173,59,4,Equipo medidor de dos sistemas trifásicos de tensión e intensidad.
+174,59,5,Equipo medidor de tres o más sistemas trifásicos de tensión o intensidad.
+175,59,6,Otros
+176,60,1,Equipo medidor de un sistema trifásico de tensión
+177,60,2,Equipo medidor de un sistema trifásico de tensión e intensidad.
+178,60,3,Equipo medidor de dos sistemas trifásicos de tensión
+179,60,4,Equipo medidor de dos sistemas trifásicos de tensión e intensidad.
+180,60,5,Equipo medidor de tres o más sistemas trifásicos de tensión o intensidad.
+181,60,6,Otros
+182,61,1,Equipo medidor de un sistema trifásico de tensión
+183,61,2,Equipo medidor de un sistema trifásico de tensión e intensidad.
+184,61,3,Equipo medidor de dos sistemas trifásicos de tensión
+185,61,4,Equipo medidor de dos sistemas trifásicos de tensión e intensidad.
+186,61,5,Equipo medidor de tres o más sistemas trifásicos de tensión o intensidad.
+187,61,6,Otros
+188,62,1,Equipo medidor de un sistema trifásico de tensión
+189,62,2,Equipo medidor de un sistema trifásico de tensión e intensidad.
+190,62,3,Equipo medidor de dos sistemas trifásicos de tensión
+191,62,4,Equipo medidor de dos sistemas trifásicos de tensión e intensidad.
+192,62,5,Equipo medidor de tres o más sistemas trifásicos de tensión o intensidad.
+193,62,6,Otros
+194,63,1,Equipo medidor de un sistema trifásico de tensión
+195,63,2,Equipo medidor de un sistema trifásico de tensión e intensidad.
+196,63,3,Equipo medidor de dos sistemas trifásicos de tensión
+197,63,4,Equipo medidor de dos sistemas trifásicos de tensión e intensidad.
+198,63,5,Equipo medidor de tres o más sistemas trifásicos de tensión o intensidad.
+199,63,6,Otros
+200,64,0,Condensadores
+201,64,1,Reactancias
+202,65,0,Condensadores
+203,65,1,Reactancias
+204,66,0,Condensadores
+205,66,1,Reactancias
+206,67,0,Condensadores
+207,67,1,Reactancias
+208,68,0,Posición no utilizada
+209,69,0,Posición no utilizada
+210,70,0,Posición no utilizada
+211,71,1,seccionador
+212,71,2,reconectador
+213,71,3,teleseñalizador
+214,71,4,fusible
+215,71,5,seccionalizador
+216,71,6,Interruptor
+217,71,7,Interruptor-seccionador
+218,72,1,seccionador
+219,72,2,reconectador
+220,72,3,teleseñalizador
+221,72,4,fusible
+222,72,5,seccionalizador
+223,72,6,Interruptor
+224,72,7,Interruptor-seccionador
+225,73,1,seccionador
+226,73,2,reconectador
+227,73,3,teleseñalizador
+228,73,4,fusible
+229,73,5,seccionalizador
+230,73,6,Interruptor
+231,73,7,Interruptor-seccionador
+232,74,1,en subestación
+233,74,2,en centro de transformación
+234,75,1,en subestación
+235,75,2,en centro de transformación
+236,76,1,en subestación
+237,76,2,en centro de transformación
+238,77,1,en subestación
+239,77,2,en centro de transformación
+240,78,1,en subestación
+241,78,2,en centro de transformación
+242,79,1,en subestación
+243,79,2,en centro de transformación
+244,80,1,en subestación
+245,80,2,en centro de transformación
+246,81,1,en subestación
+247,81,2,en centro de transformación
+248,82,1,en subestación
+249,82,2,en centro de transformación
+250,83,1,en subestación
+251,83,2,en centro de transformación
+252,84,1,en subestación
+253,84,2,en centro de transformación
+254,85,1,en subestación
+255,85,2,en centro de transformación
+256,86,1,en subestación
+257,86,2,en centro de transformación
+258,87,1,en subestación
+259,87,2,en centro de transformación
+260,88,1,en subestación
+261,88,2,en centro de transformación
+262,89,1,en subestación
+263,89,2,en centro de transformación
+264,90,1,en subestación
+265,90,2,en centro de transformación
+266,91,1,en subestación
+267,91,2,en centro de transformación
+268,92,1,en subestación
+269,92,2,en centro de transformación
+270,93,1,en subestación
+271,93,2,en centro de transformación
+272,94,1,Convencional
+273,94,2,Blindada
+274,94,3,Hibrida
+275,95,1,Convencional
+276,95,2,Blindada
+277,95,3,Hibrida
+278,96,1,Convencional
+279,96,2,Blindada
+280,96,3,Hibrida
+281,97,A,Interior - Blindada
+282,97,B,Intemperie - Blindada
+283,97,C,Interior - Convencional
+284,97,D,Intemp. - Convencional
+285,97,E,Interior - Hibrida
+286,97,F,Intemperie - Hibrida
+287,97,G,Móvil – Blindada
+288,98,A,Interior - Blindada
+289,98,B,Intemperie - Blindada
+290,98,C,Interior - Convencional
+291,98,D,Intemp. - Convencional
+292,98,E,Interior - Hibrida
+293,98,F,Intemperie - Hibrida
+294,98,G,Móvil – Blindada
+295,99,A,Interior - Blindada
+296,99,B,Intemperie - Blindada
+297,99,C,Interior - Convencional
+298,99,D,Intemp. - Convencional
+299,99,E,Interior - Hibrida
+300,99,F,Intemperie - Hibrida
+301,99,G,Móvil – Blindada
+302,100,A,Interior - Blindada
+303,100,B,Intemperie - Blindada
+304,100,C,Interior - Convencional
+305,100,D,Intemp. - Convencional
+306,100,E,Interior - Hibrida
+307,100,F,Intemperie - Hibrida
+308,100,G,Móvil – Blindada
+309,101,A,Interior - Blindada
+310,101,B,Intemperie - Blindada
+311,101,C,Interior - Convencional
+312,101,D,Intemp. - Convencional
+313,101,E,Interior - Hibrida
+314,101,F,Intemperie - Hibrida
+315,101,G,Móvil – Blindada
+316,102,A,Interior - Blindada
+317,102,B,Intemperie - Blindada
+318,102,C,Interior - Convencional
+319,102,D,Intemp. - Convencional
+320,102,E,Interior - Hibrida
+321,102,F,Intemperie - Hibrida
+322,102,G,Móvil – Blindada
+323,103,1,Edificios
+324,103,2,Sistemas de comunicaciones
+325,103,3,Sistemas técnicos de gestión
+326,103,4,Otros
+327,103,5,Posición no utilizada
+328,103,6,Transformadores y otros equipos en almacén
+329,103,7,Telegestión
+330,103,8,Equipos de Medida
+331,103,9,Vehículo Eléctrico
+332,103,0,Sistemas Inteligentes
+333,104,1,No telemedido ni telegestionado
+334,104,2,Telemedido pero no telegestionado
+335,104,3,Telemedido y telegestionado
+336,105,1,No telemedido ni telegestionado
+337,105,2,Telemedido pero no telegestionado
+338,105,3,Telemedido y telegestionado
+339,106,0,Carbón
+340,106,1,Fuel
+341,106,2,Gas
+342,106,3,Embalse
+343,106,4,Fluyente
+344,106,5,Bombeo
+345,106,6,Ciclo combinado
+346,106,7,Diésel
+347,106,8,Residuos
+348,106,9,Cogeneración
+349,107,0,Carbón
+350,107,1,Fuel
+351,107,2,Gas
+352,107,3,Embalse
+353,107,4,Fluyente
+354,107,5,Bombeo
+355,107,6,Ciclo combinado
+356,107,7,Diésel
+357,107,8,Residuos
+358,107,9,Cogeneración
+359,108,0,Carbón
+360,108,1,Fuel
+361,108,2,Gas
+362,108,3,Embalse
+363,108,4,Fluyente
+364,108,5,Bombeo
+365,108,6,Ciclo combinado
+366,108,7,Diésel
+367,108,8,Residuos
+368,108,9,Cogeneración
+369,108,0,Carbón
+370,109,1,Fuel
+371,109,2,Gas
+372,109,3,Embalse
+373,109,4,Fluyente
+374,109,5,Bombeo
+375,109,6,Ciclo combinado
+376,109,7,Diésel
+377,109,8,Residuos
+378,109,9,Cogeneración
+379,110,0,Carbón
+380,110,1,Fuel
+381,110,2,Gas
+382,110,3,Embalse
+383,110,4,Fluyente
+384,110,5,Bombeo
+385,110,6,Ciclo combinado
+386,110,7,Diésel
+387,110,8,Residuos
+388,110,9,Cogeneración
+389,111,0,Carbón
+390,111,1,Fuel
+391,111,2,Gas
+392,111,3,Embalse
+393,111,4,Fluyente
+394,111,5,Bombeo
+395,111,6,Ciclo combinado
+396,111,7,Diésel
+397,111,8,Residuos
+398,111,9,Cogeneración
+399,112,0,Carbón
+400,112,1,Fuel
+401,112,2,Gas
+402,112,3,Embalse
+403,112,4,Fluyente
+404,112,5,Bombeo
+405,112,6,Ciclo combinado
+406,112,7,Diésel
+407,112,8,Residuos
+408,112,9,Cogeneración
+409,113,0,Carbón
+410,113,1,Fuel
+411,113,2,Gas
+412,113,3,Embalse
+413,113,4,Fluyente
+414,113,5,Bombeo
+415,113,6,Ciclo combinado
+416,113,7,Diésel
+417,113,8,Residuos
+418,113,9,Cogeneración
+419,114,0,Posición no utilizada
+420,115,0,Posición no utilizada
+421,116,0,Posición no utilizada
+422,117,0,Posición no utilizada
+423,118,0,Posición no utilizada
+424,119,0,Posición no utilizada
+425,120,0,Posición no utilizada
+426,121,0,Posición no utilizada
+427,122,0,Posición no utilizada
+428,123,0,Posición no utilizada
+429,124,0,Posición no utilizada
+430,125,0,Posición no utilizada
+431,126,0,Posición no utilizada
+432,127,0,Posición no utilizada
+433,128,0,Posición no utilizada
+434,129,0,Posición no utilizada
+435,130,0,Posición no utilizada
+436,131,0,Posición no utilizada
+437,132,0,Posición no utilizada
+438,133,0,Posición no utilizada
+439,134,0,Posición no utilizada
+440,135,0,Posición no utilizada
+441,136,0,Posición no utilizada
+442,137,0,Posición no utilizada
+443,138,0,Posición no utilizada
+444,139,0,Posición no utilizada
+445,140,0,Posición no utilizada
+446,141,0,Posición no utilizada
+447,142,0,Posición no utilizada
+448,143,0,Posición no utilizada
+449,144,0,Posición no utilizada
+450,145,0,Posición no utilizada
+451,146,0,Posición no utilizada
+452,147,0,Posición no utilizada
+453,148,0,Posición no utilizada
+454,149,0,Posición no utilizada
