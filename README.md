@@ -1,8 +1,9 @@
 # msdashboard
 
-This project is te repository that build and is the standard CINI selector for normal use. It is not a package but it is usefull to use it in different python proyects.
+This project is te repository that build and is the standard CINI selector for differrent use. It is not a package but it is usefull to use it in different python projects.
 
-In the future it is possible to build a standar python package with it.
+In the future it is possible to build a standard python package with it.
+
 ## prerequisites
 
 Has anaconda installed on windows. And configured you system variables ($path) of anaconda on windows: 
@@ -26,7 +27,7 @@ $ cd python_CINI_selector
 $ build.bat
 ```
 
-4. To activate the environmet run:
+4. To activate the environmet and run the test scripts:
 ```
 $ activate ./env
 $ python TEST/CINI_Test_File.py
