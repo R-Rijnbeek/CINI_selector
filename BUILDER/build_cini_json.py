@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-
 import json
 
 last_level = [  {
@@ -185,7 +184,7 @@ instance5 = pd.read_csv("CINI_config\CINI_2 - QUINTA.csv").values
 
 instance6 = pd.read_csv("CINI_config\CINI_2 - SEXTA.csv").values
 
-instance7 = pd.read_csv("CINI_config\CINI - SEPTIMA.csv").values
+#instance7 = pd.read_csv("CINI_config\CINI - SEPTIMA.csv").values
 
 
 index_1 , index_2, index_3 ,index_4 , index_5 , index_6, index_7= 0, 0, 0,0, 0, 0, 0
@@ -263,11 +262,10 @@ while len(instance1)>0:
     index_1 += 1
     instance1 = np.delete(instance1, 0, 0)
 
-
-print(CINI)
-
 CINI_STRING = json.dumps(CINI,indent=4)
 
-file1 = open("CINI_JSON2.json","w+") 
+file1 = open("CONFIG_FILE\CINI_Configuration_File.json","w+") 
 file1.write(CINI_STRING)
 file1.close()
+
+print("finish building CINI_Configuration_File")

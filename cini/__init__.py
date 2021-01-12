@@ -17,7 +17,7 @@ class CINI_Constructor():
 # ========= INIT FUNCTION ==============
     def ImportConfigurationFile(self): 
         try:
-            file1 = open("CINI_JSON.json","r")
+            file1 = open("CONFIG_FILE\CINI_Configuration_File.json","r")
             CINI_STRING = file1.read()
             CINI_DICT =json.loads(CINI_STRING)
             self.cini_dict = CINI_DICT
@@ -138,17 +138,4 @@ class CINI_Constructor():
 
 if __name__ == "__main__":
 
-    pr =CINI_Constructor()
-
-    pr.Define_Selector(["3","1","0","2","3","T","0"])
-    #pr.Define_Selector(["2","0","2","1"])
-    print(pr.Selector_CINI_getter())
-    print(pr.CINI_Builder())
-    print(pr.Is_CINI_Complete())
-    print(pr.CINI_getter())
-    pr.CINI_reset()
-    print(pr.CINI_getter())
-
-
-
-
+    pass
