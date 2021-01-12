@@ -9,6 +9,7 @@ In the future it is possible to build a standard python package with it.
 Has anaconda installed on windows. And configured you system variables ($path) of anaconda on windows: 
 * C:\ProgramData\Anaconda3
 * C:\ProgramData\Anaconda3\Scripts
+* C:\ProgramData\Anaconda3\Library\bin
 
 ## Instalation protocol
 
