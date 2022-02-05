@@ -30,4 +30,4 @@ dependencies:
   - wheel=0.35.1=py_0
   - wincertstore=0.2=py37_0
   - zlib=1.2.11=vc14h1cdd9ab_1
-prefix: .\env
+
