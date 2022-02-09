@@ -1,6 +1,6 @@
 # msdashboard
 
-This project is te repository that build and is the standard CINI selector for differrent use. It is not a package but it is usefull to use it in different python projects.
+This repository that build and is the standard CINI selector for differrent use. It is not a package but it is useful to use it in different python projects.
 
 In the future it is possible to build a standard python package with it.
 
