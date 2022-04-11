@@ -1,3 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+cini_selector: Module that work with the Spanish CINI code notification. Helping to verify if the code are valid or not. And help on each level The diffewrent options that the user have.
+"""
+__author__  = "Robert Rijnbeek"
+__email__   = "robert270384@gmail.com"
+__version__ = "0.0.1"
+
+# ======== IMPORTS ===========
+
 import json
 
 from os.path import join
@@ -19,7 +29,7 @@ class CINI_Constructor():
 # ========= INIT FUNCTION ==============
     def ImportConfigurationFile(self): 
         try:
-            file1 = open(join("cini","CONFIG_FILE","CINI_Configuration_File.json"),"r")
+            file1 = open(join("src","cini_selector","CONFIG_FILE","CINI_Configuration_File.json"),"r")
             CINI_STRING = file1.read()
             CINI_DICT =json.loads(CINI_STRING)
             self.cini_dict = CINI_DICT
