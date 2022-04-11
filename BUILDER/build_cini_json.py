@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import json
 
+from os.path import join
+
 last_level = [  {
                 "id_list":range(1,2161),
                 "cod_list":["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"],
@@ -172,19 +174,19 @@ def catch_lastlevel(ID,CODE):
 
 
 
-instance1 = pd.read_csv("CINI_config\CINI_2 - PRIMERA.csv").values
+instance1 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - PRIMERA.csv")).values
 
-instance2 = pd.read_csv("CINI_config\CINI_2 - SEGUNDA.csv").values
+instance2 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - SEGUNDA.csv")).values
 
-instance3 = pd.read_csv("CINI_config\CINI_2 - TERCERA.csv").values
+instance3 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - TERCERA.csv")).values
 
-instance4 = pd.read_csv("CINI_config\CINI_2 - CUARTA.csv").values
+instance4 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - CUARTA.csv")).values
 
-instance5 = pd.read_csv("CINI_config\CINI_2 - QUINTA.csv").values
+instance5 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - QUINTA.csv")).values
 
-instance6 = pd.read_csv("CINI_config\CINI_2 - SEXTA.csv").values
+instance6 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - SEXTA.csv")).values
 
-#instance7 = pd.read_csv("CINI_config\CINI - SEPTIMA.csv").values
+#instance7 = pd.read_csv("BUILDER\CINI_config\CINI - SEPTIMA.csv").values
 
 
 index_1 , index_2, index_3 ,index_4 , index_5 , index_6, index_7= 0, 0, 0,0, 0, 0, 0
@@ -264,7 +266,7 @@ while len(instance1)>0:
 
 CINI_STRING = json.dumps(CINI,indent=4)
 
-file1 = open("cini\CONFIG_FILE\CINI_Configuration_File_1.json","w+") 
+file1 = open(join("cini","CONFIG_FILE","CINI_Configuration_File_1.json"),"w+") 
 file1.write(CINI_STRING)
 file1.close()
 

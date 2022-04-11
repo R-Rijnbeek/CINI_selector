@@ -1,5 +1,7 @@
 import json
 
+from os.path import join
+
 class CINI_Constructor():
     def __init__(self):
         self.cini_dict = {}
@@ -17,7 +19,7 @@ class CINI_Constructor():
 # ========= INIT FUNCTION ==============
     def ImportConfigurationFile(self): 
         try:
-            file1 = open("cini\CONFIG_FILE\CINI_Configuration_File.json","r")
+            file1 = open(join("cini","CONFIG_FILE","CINI_Configuration_File.json"),"r")
             CINI_STRING = file1.read()
             CINI_DICT =json.loads(CINI_STRING)
             self.cini_dict = CINI_DICT
