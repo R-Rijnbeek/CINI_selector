@@ -264,7 +264,7 @@ while len(instance1)>0:
 
 CINI_STRING = json.dumps(CINI,indent=4)
 
-file1 = open("cini\CONFIG_FILE\CINI_Configuration_File_1.json","w+") 
+file1 = open("cini\CONFIG_FILE\CINI_Configuration_File.json","w+") 
 file1.write(CINI_STRING)
 file1.close()
 
