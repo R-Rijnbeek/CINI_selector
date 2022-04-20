@@ -1,7 +1,6 @@
-import sys
-sys.path.append('.')
 
-from src.cini_selector import CINI_Constructor
+
+from cini_selector import CINI_Constructor
 
 pr = CINI_Constructor()
 

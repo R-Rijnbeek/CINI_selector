@@ -4,13 +4,14 @@ cini_selector: Module that work with the Spanish CINI code notification. Helping
 """
 __author__  = "Robert Rijnbeek"
 __email__   = "robert270384@gmail.com"
-__version__ = "0.0.1"
+__version__ = "0.0.3"
 
 # ======== IMPORTS ===========
 
 import json
 
-from os.path import join
+from os.path import join, dirname, abspath
+
 
 class CINI_Constructor():
     def __init__(self):
@@ -29,7 +30,7 @@ class CINI_Constructor():
 # ========= INIT FUNCTION ==============
     def ImportConfigurationFile(self): 
         try:
-            file1 = open(join("src","cini_selector","CONFIG_FILE","CINI_Configuration_File.json"),"r")
+            file1 = open(join(dirname(abspath(__file__)),"CONFIG_FILE","CINI_Configuration_File.json"),"r")
             CINI_STRING = file1.read()
             CINI_DICT =json.loads(CINI_STRING)
             self.cini_dict = CINI_DICT
@@ -150,4 +151,15 @@ class CINI_Constructor():
 
 if __name__ == "__main__":
 
-    pass
+
+    pr = CINI_Constructor()
+
+
+    pr.Define_Selector(["3","1","0","2","3","T","0"])
+    #pr.Define_Selector(["2","0","2","1"])
+    print(pr.Selector_CINI_getter())
+    print(pr.CINI_Builder())
+    print(pr.Is_CINI_Complete())
+    print(pr.CINI_getter())
+    pr.CINI_reset()
+    print(pr.CINI_getter())
