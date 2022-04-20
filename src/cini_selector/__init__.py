@@ -4,7 +4,7 @@ cini_selector: Module that work with the Spanish CINI code notification. Helping
 """
 __author__  = "Robert Rijnbeek"
 __email__   = "robert270384@gmail.com"
-__version__ = "0.0.3"
+__version__ = "0.0.4"
 
 # ======== IMPORTS ===========
 
@@ -151,9 +151,7 @@ class CINI_Constructor():
 
 if __name__ == "__main__":
 
-
     pr = CINI_Constructor()
-
 
     pr.Define_Selector(["3","1","0","2","3","T","0"])
     #pr.Define_Selector(["2","0","2","1"])
