@@ -9,7 +9,16 @@ Has anaconda installed on windows. And configured you system variables ($path) o
 * C:\ProgramData\Anaconda3\Scripts
 * C:\ProgramData\Anaconda3\Library\bin
 
-## Test protocol
+## Deploy new version:
+
+1. Adapt the __version__ tag insite the python module: `/src/cini_selector/__init__.py`
+
+2. Execute the command: 
+```
+$ deploy.bat
+```
+* ad some point of the deployment process you need provide a valid username and password of the pypi account
+## Testing
 
 1. Clone the github repository.
 ```
@@ -32,7 +41,7 @@ $ activate ./env
 $ python TESTS/__init__.py
 ```
 
-Then you can use the 'cini' directory as a local package
+Then you can use the 'TESTS' directory to test the package
 
 ## Development protocol
 
@@ -56,7 +65,7 @@ $ configuration_build.bat
 $ activate ./build_env
 ```
 
-5. Once activated the environment. Then you can use also the scripts inside the 'BUILDER' derictory. 
+5. Once activated the environment. Then you can use also the scripts inside the 'BUILDER' directory. 
 
 ## Notes to know: 
 
