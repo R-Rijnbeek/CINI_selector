@@ -20,10 +20,8 @@ if not exist ".\.vscode\" mkdir .\.vscode
 
 ( 
     echo {
-    echo     "python.defaultInterpreterPath": ".\\env\\Scripts\\python.exe",
+    echo     "python.defaultInterpreterPath": ".\\build_env\\python.exe",
     echo }
 ) > .\.vscode\settings.json
 
-python -m venv env
-call .\env\Scripts\activate
-pip install pip install CINI-selector
+conda env create -f build_environment.yml --prefix build_env

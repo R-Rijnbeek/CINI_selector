@@ -1,8 +1,6 @@
-# python_CINI_selector
+# CINI_selector
 
 This repository that build and is the standard CINI selector for differrent use. It is not a package but it is useful to use it in different python projects.
-
-In the future it is possible to build a standard python package with it.
 
 ## prerequisites
 
@@ -11,16 +9,25 @@ Has anaconda installed on windows. And configured you system variables ($path) o
 * C:\ProgramData\Anaconda3\Scripts
 * C:\ProgramData\Anaconda3\Library\bin
 
-## Instalation protocol
+## Deploy new version:
+
+1. Adapt the __version__ tag insite the python module: `/src/cini_selector/__init__.py`
+
+2. Execute the command: 
+```
+$ deploy.bat
+```
+* ad some point of the deployment process you need provide a valid username and password of the pypi account
+## Testing
 
 1. Clone the github repository.
 ```
-$ git clone https://github.com/R-Rijnbeek/python_CINI_selector.git
+$ git clone https://github.com/R-Rijnbeek/CINI_selector.git
 ```
 
 2. Enter the project folder.
 ```
-$ cd python_CINI_selector
+$ cd CINI_selector
 ```
 
 3. Build the virtual environment on the repository by running:
@@ -31,14 +38,36 @@ $ build.bat
 4. To activate the environmet and run the test scripts:
 ```
 $ activate ./env
-$ python TEST/CINI_Test_File.py
+$ python TESTS/__init__.py
 ```
 
-If it works. Then you can use the 'cini' directory as a local package
+Then you can use the 'TESTS' directory to test the package
+
+## Development protocol
+
+1. Clone the github repository.
+```
+$ git clone https://github.com/R-Rijnbeek/CINI_selector.git
+```
+
+2. Enter the project folder.
+```
+$ cd CINI_selector
+```
+
+3. Build the virtual environment on the repository by running:
+```
+$ configuration_build.bat
+```
+
+4. Once created the virtual environment. To activate it and use all content of the repository
+```
+$ activate ./build_env
+```
+
+5. Once activated the environment. Then you can use also the scripts inside the 'BUILDER' directory. 
 
 ## Notes to know: 
 
 1. The dependencies to use all features of this repository are writed on the environmet.yml file
-2. If you will only use the content of the 'cini' directory. Than you need only a python environmet with the 'json' package installed on it:
-    * ANACONDA => https://anaconda.org/jmcmurray/json
-3. This repository is tested with windows 10 and anaconda version 4.9.2.
+3. This repository is tested with windows 10 and anaconda version 4.11.0

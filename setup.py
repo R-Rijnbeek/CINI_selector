@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
 
 import re, io, os
+
 class getPackageInfo:
     def __init__(self):
         self._package_module_name = None
@@ -49,7 +50,7 @@ class getPackageInfo:
                 return True
 
     def __getLongDescription(self):
-        with open("README.md", "r", encoding="utf-8") as fh:
+        with open("PIPY_README.md", "r", encoding="utf-8") as fh:
             self._long_description = fh.read()
             return  True
 
@@ -167,7 +168,7 @@ setup(
         (
             '.',
             ["requirements.txt"]
-            )
+        )
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -177,5 +178,6 @@ setup(
     package_dir = { "": "src"},
     packages = find_packages(where = "src"),
     python_requires = ">=3.6",
-    install_requires=PACKAGE_INFO.required_packages
+    install_requires=PACKAGE_INFO.required_packages,
+    include_package_data = True
 )
