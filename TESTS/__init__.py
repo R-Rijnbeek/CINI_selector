@@ -1,5 +1,3 @@
-
-
 from cini_selector import CINI_Constructor
 
 pr = CINI_Constructor()

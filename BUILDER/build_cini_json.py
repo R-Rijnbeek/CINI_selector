@@ -158,116 +158,142 @@ last_level = [  {
                 }
                 ]
 
-def catch_lastlevel(ID,CODE):
-    for dictionary in last_level:
-        id_list = dictionary["id_list"]
-        cod_list = dictionary["cod_list"]
-        if cod_list is None:
-            if ID in id_list:
-                lastlevel = dictionary["object"]
-                return lastlevel
-        else:
-            if (ID in id_list) and (CODE in cod_list):
-                lastlevel = dictionary["object"]
-                return lastlevel
-    print("some problems")
+
+class Create_CINI_ConfigFile:
+    def __init__(self, LAST_LEVEL):
+        self.last_level = LAST_LEVEL
+        self.instance1 = None
+        self.instance2 = None
+        self.instance3 = None
+        self.instance4 = None
+        self.instance5 = None
+        self.instance6 = None
+        self.CINI = None
+        self.CINI_STRING = ""
+        self.file_location_path = join("src","cini_selector","CONFIG_FILE","CINI_Configuration_File.json")
+
+    def catch_lastlevel(self, ID, CODE):
+        for dictionary in self.last_level:
+            id_list = dictionary["id_list"]
+            cod_list = dictionary["cod_list"]
+            if cod_list is None:
+                if ID in id_list:
+                    lastlevel = dictionary["object"]
+                    return lastlevel
+            else:
+                if (ID in id_list) and (CODE in cod_list):
+                    lastlevel = dictionary["object"]
+                    return lastlevel
+        print("some problems")
+
+    def import_CSV_ConfigurationFiles(self):
+        self.instance1 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - PRIMERA.csv")).values
+        self.instance2 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - SEGUNDA.csv")).values
+        self.instance3 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - TERCERA.csv")).values
+        self.instance4 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - CUARTA.csv")).values
+        self.instance5 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - QUINTA.csv")).values
+        self.instance6 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - SEXTA.csv")).values
+        return True
 
 
+    def build_CINI_object(self):
+        index_1 , index_2, index_3 ,index_4 , index_5 , index_6, index_7= 0, 0, 0, 0, 0, 0, 0
+        self.CINI = {"cini":[]}
+        while len(self.instance1)>0:
+            instance_row1 = self.instance1[0]
+            unique1, cod1, des1 = instance_row1
+            level_1 = {"cod":cod1,"des":des1, "next":[]}
+            self.CINI["cini"].append(level_1)
+            
+            count_2 = 0
+            while len(self.instance2)>0 and count_2 < 100:
+                count_2 +=1
+                instance_row2 = self.instance2[0]
+                unique_2, link2, cod2, des2 = instance_row2
+                if str(unique1) == str(link2):
+                    level_2 = {"cod":cod2, "des":des2, "next":[]}
+                    self.CINI["cini"][index_1]["next"].append(level_2)
 
-instance1 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - PRIMERA.csv")).values
+                    count_3 = 0
+                    while len(self.instance3)>0 and count_3 <300:
+                        count_3 +=1
+                        instance_row3 = self.instance3[0]
+                        unique_3, link3, cod3, des3 = instance_row3
+                        if str(unique_2) == str(link3):
+                            level_3 = {"cod":cod3, "des":des3, "next":[]}
+                            self.CINI["cini"][index_1]["next"][index_2]["next"].append(level_3)
 
-instance2 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - SEGUNDA.csv")).values
+                            count_4 = 0
+                            while len(self.instance4)>0 and count_4 <  500:
+                                count_4 +=1
+                                instance_row4 = self.instance4[0]
+                                unique_4, link4, cod4, des4 = instance_row4
+                                if str(unique_3) == str(link4):
+                                    level_4 = {"cod":cod4, "des":des4, "next":[]}
+                                    self.CINI["cini"][index_1]["next"][index_2]["next"][index_3]["next"].append(level_4)
 
-instance3 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - TERCERA.csv")).values
+                                    count_5 = 0
+                                    while len(self.instance5)>0 and count_5 <  800:
+                                        count_5 +=1
+                                        instance_row5 = self.instance5[0]
+                                        unique_5, link5, cod5, des5 = instance_row5
+                                        if str(unique_4) == str(link5):
+                                            level_5 = {"cod":cod5, "des":des5, "next":[]}
+                                            self.CINI["cini"][index_1]["next"][index_2]["next"][index_3]["next"][index_4]["next"].append(level_5)
 
-instance4 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - CUARTA.csv")).values
+                                            count_6 = 0
+                                            while len(self.instance6)>0 and count_6 < 8000:
+                                                count_6 +=1
+                                                instance_row6 = self.instance6[0]
+                                                unique_6, link6, cod6, des6 = instance_row6
+                                                if str(unique_5) == str(link6) :
+                                                    seventh_level = self.catch_lastlevel(unique_6,cod6)
+                                                    level_6 = {"cod":cod6, "des":des6, "next":seventh_level}
+                                                    self.CINI["cini"][index_1]["next"][index_2]["next"][index_3]["next"][index_4]["next"][index_5]["next"].append(level_6)
+                                                    
+                                                    print(len(self.instance6))
+                                                    index_6 +=1
+                                                    self.instance6 = np.delete(self.instance6, 0, 0)
 
-instance5 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - QUINTA.csv")).values
+                                            index_6 = 0
+                                            index_5 +=1
+                                            self.instance5 = np.delete(self.instance5, 0, 0)
+                                    
+                                    index_5 = 0
+                                    index_4 +=1
+                                    self.instance4 = np.delete(self.instance4, 0, 0)                   
+                            index_4 = 0
+                            index_3 +=1
+                            self.instance3 = np.delete(self.instance3, 0, 0)
+                    index_3 = 0
+                    index_2 +=1
+                    self.instance2 = np.delete(self.instance2, 0, 0)
+            index_2 =0   
+            index_1 += 1
+            self.instance1 = np.delete(self.instance1, 0, 0)
+        return True
 
-instance6 = pd.read_csv(join("BUILDER","CINI_config","CINI_2 - SEXTA.csv")).values
+    def create_CINI_String(self):
+        self.CINI_STRING = json.dumps(self.CINI, indent=4)
+        return True
 
-#instance7 = pd.read_csv("BUILDER\CINI_config\CINI - SEPTIMA.csv").values
+    def Create_CINI_ConfigurationFile(self):
+        file1 = open(self.file_location_path,"w+") 
+        file1.write(self.CINI_STRING)
+        file1.close()
+        return True
 
+    def Create_CINI_ConfigurationFile_Process(self):
+        if self.import_CSV_ConfigurationFiles():
+            if self.build_CINI_object():
+                if self.create_CINI_String():
+                    if self.Create_CINI_ConfigurationFile():
+                        print("SUCCESSFULL CREATED CINI CONFIGURATION FILE!!")
+                        return True
+        print("PROBLEMS CREATING CINI CONFIGURATION FILE!!")
+        return False
+                    
+if __name__ == "__main__":
 
-index_1 , index_2, index_3 ,index_4 , index_5 , index_6, index_7= 0, 0, 0,0, 0, 0, 0
-CINI = {"cini":[]}
-while len(instance1)>0:
-    instance_row1 = instance1[0]
-    unique1, cod1, des1 = instance_row1
-    level_1 = {"cod":cod1,"des":des1, "next":[]}
-    CINI["cini"].append(level_1)
-    
-    count_2 = 0
-    while len(instance2)>0 and count_2 < 100:
-        count_2 +=1
-        instance_row2 = instance2[0]
-        unique_2, link2, cod2, des2 = instance_row2
-        if str(unique1) == str(link2):
-            level_2 = {"cod":cod2, "des":des2, "next":[]}
-            CINI["cini"][index_1]["next"].append(level_2)
-
-            count_3 = 0
-            while len(instance3)>0 and count_3 <300:
-                count_3 +=1
-                instance_row3 = instance3[0]
-                unique_3, link3, cod3, des3 = instance_row3
-                if str(unique_2) == str(link3):
-                    level_3 = {"cod":cod3, "des":des3, "next":[]}
-                    CINI["cini"][index_1]["next"][index_2]["next"].append(level_3)
-
-                    count_4 = 0
-                    while len(instance4)>0 and count_4 <  500:
-                        count_4 +=1
-                        instance_row4 = instance4[0]
-                        unique_4, link4, cod4, des4 = instance_row4
-                        if str(unique_3) == str(link4):
-                            level_4 = {"cod":cod4, "des":des4, "next":[]}
-                            CINI["cini"][index_1]["next"][index_2]["next"][index_3]["next"].append(level_4)
-
-                            count_5 = 0
-                            while len(instance5)>0 and count_5 <  800:
-                                count_5 +=1
-                                instance_row5 = instance5[0]
-                                unique_5, link5, cod5, des5 = instance_row5
-                                if str(unique_4) == str(link5):
-                                    level_5 = {"cod":cod5, "des":des5, "next":[]}
-                                    CINI["cini"][index_1]["next"][index_2]["next"][index_3]["next"][index_4]["next"].append(level_5)
-
-                                    count_6 = 0
-                                    while len(instance6)>0 and count_6 < 8000:
-                                        count_6 +=1
-                                        instance_row6 = instance6[0]
-                                        unique_6, link6, cod6, des6 = instance_row6
-                                        if str(unique_5) == str(link6) :
-                                            seventh_level = catch_lastlevel(unique_6,cod6)
-                                            level_6 = {"cod":cod6, "des":des6, "next":seventh_level}
-                                            CINI["cini"][index_1]["next"][index_2]["next"][index_3]["next"][index_4]["next"][index_5]["next"].append(level_6)
-                                            
-                                            print(len(instance6))
-                                            index_6 +=1
-                                            instance6 = np.delete(instance6, 0, 0)
-
-                                    index_6 = 0
-                                    index_5 +=1
-                                    instance5 = np.delete(instance5, 0, 0)
-                            
-                            index_5 = 0
-                            index_4 +=1
-                            instance4 = np.delete(instance4, 0, 0)                   
-                    index_4 = 0
-                    index_3 +=1
-                    instance3 = np.delete(instance3, 0, 0)
-            index_3 = 0
-            index_2 +=1
-            instance2 = np.delete(instance2, 0, 0)
-    index_2 =0   
-    index_1 += 1
-    instance1 = np.delete(instance1, 0, 0)
-
-CINI_STRING = json.dumps(CINI,indent=4)
-
-file1 = open(join("src","cini_selector","CONFIG_FILE","CINI_Configuration_File.json"),"w+") 
-file1.write(CINI_STRING)
-file1.close()
-
-print("finish building CINI_Configuration_File")
+    cini_config_builder = Create_CINI_ConfigFile(last_level)
+    cini_config_builder.Create_CINI_ConfigurationFile_Process()
