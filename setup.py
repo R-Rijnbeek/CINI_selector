@@ -50,7 +50,7 @@ class getPackageInfo:
                 return True
 
     def __getLongDescription(self):
-        with open("README.md", "r", encoding="utf-8") as fh:
+        with open("PIPY_README.md", "r", encoding="utf-8") as fh:
             self._long_description = fh.read()
             return  True
 
